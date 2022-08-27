@@ -1,0 +1,62 @@
+section.calendar {
+  padding: 0 var(--margin);
+}
+
+section.calendar .inner {
+  display: grid;
+  grid-template-columns: 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% 14.3%;
+  border-top: var(--border);
+  border-left: var(--border);
+}
+
+.cell {
+  border: var(--border);
+  border-left: 0;
+  border-top: 0;
+  position: relative;
+  height: 150px;cursor: pointer;
+  transition: all .25s;
+  padding: var(--margin) 6px 6px;
+  overflow: auto;
+}
+
+.cell.act {
+  outline: 2px solid var(--primary-color);
+}
+
+.cell.act label {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.cell label {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 14px;
+  line-height: 1em;
+}
+
+.cell ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.cell li {
+  background: #67a322;
+  border-radius: 2px;
+  line-height: 1em;
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: 6px;
+}
+
+.cell .ev {
+  user-select: none;
+}
+
+.moving {
+  position: fixed;
+  z-index: 5;
+}

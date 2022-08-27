@@ -1,0 +1,51 @@
+.event-modal {
+  display: none;
+}
+
+.event-modal .cover {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .75);
+}
+
+.event-modal .content {
+  background: var(--bg-color);
+  position: fixed;
+  width: 400px;
+  left: 50%;
+  margin-left: -200px;
+  top: 20%;
+  border-radius: var(--border-radius);
+  
+}
+
+.event-modal .data {
+  padding: var(--margin);
+}
+
+.event-modal h3 {
+  margin: 0 0 var(--margin);
+  font-size: 16px;
+}
+
+.event-modal input {
+  width: 100%;
+  outline: 0;
+  font-size: 15px;
+  padding: 10px;
+  border: 0;
+  border-radius: var(--border-radius);
+}
+
+.event-modal footer {
+  display: flex;
+  padding: var(--margin);
+  border-top: var(--border);
+}
+
+.event-modal footer button:last-child {
+  margin-left: auto;
+}

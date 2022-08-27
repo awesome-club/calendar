@@ -1,0 +1,33 @@
+header.main {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 100%;
+  padding: var(--margin);
+
+}
+
+header.main h2 {
+  margin: 0;
+  text-align: right;
+  font-size: 20px;
+  align-self: center;
+}
+
+header.main .logo {
+  font-size: 32px;
+  align-self: center;
+}
+
+header.main nav {
+  justify-self: center;
+  display: flex;
+}
+
+header.main nav button {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+header button {
+  justify-self: center;
+}

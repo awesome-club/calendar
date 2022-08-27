@@ -1,0 +1,50 @@
+@import "vars.css";
+@import "header.css";
+@import "calendar.css";
+@import "modal.css";
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  height: 28px;
+  align-items: center;
+  padding: 0 var(--margin-sm);
+  border: 0;
+  border-radius: var(--border-radius);
+}
+
+button.primary {
+  background: var(--primary-color);
+}
+
+#calendar {
+  width: 100vh;
+  max-width: 750px;
+  margin: 0 auto;
+}
